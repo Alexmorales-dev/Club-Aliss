@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Aliss — Menú Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="leaf-deco leaf-1">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10,100 Q50,10 100,20 Q150,30 190,100 Q150,170 100,180 Q50,190 10,100Z" fill="white"/>
+    </svg>
+  </div>
+  <div class="leaf-deco leaf-2">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10,100 Q50,10 100,20 Q150,30 190,100 Q150,170 100,180 Q50,190 10,100Z" fill="white"/>
+    </svg>
+  </div>
+
+  <div class="logo-wrap">
+    <div class="logo-ring">
+      <span class="logo-text">CA</span>
+    </div>
+  </div>
+
+  <h1 class="hero-title">
+    Club Aliss
+    <span>Nutrición & Bienestar</span>
+  </h1>
+  <p class="hero-sub">Herbalife · Suplementos · Bebidas</p>
+  <div class="hero-divider"></div>
+  <p class="hero-desc">Productos de calidad para transformar tu estilo de vida. Bebidas, batidos y suplementos Herbalife.</p>
+
+  <div class="scroll-hint">
+    <span>Ver menú</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- NAV STICKY -->
+<nav class="sticky-nav">
+  <div class="nav-inner">
+    <span class="nav-brand">Club Aliss</span>
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="showCat('bebidas', this)">Bebidas</button>
+      <button class="nav-tab" onclick="showCat('batidos', this)">Batidos</button>
+      <button class="nav-tab" onclick="showCat('suplementos', this)">Snacks</button>
+      <button class="nav-tab" onclick="showCat('paquetes', this)">Paquetes</button>
+    </div>
+  </div>
+</nav>
+
+<!-- MENÚ -->
+<main class="menu-section">
+
+  <!-- BEBIDAS -->
+  <div id="cat-bebidas" class="cat-panel visible">
+    <div class="section-header">
+      <p class="section-eyebrow">Para tu energía</p>
+      <h2 class="section-title">Bebidas <em>vitales</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card" style="animation-delay:0.05s">
+        <span class="card-badge">Energizante</span>
+        <h3 class="card-name">N-R-G</h3>
+        <p class="card-desc">Elaborado a base de semillas de guaraná y pokoe naranja (té negro), con ingredientes de origen natural.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>20</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.1s">
+        <span class="card-badge">Digestivo</span>
+        <h3 class="card-name">Herbal Aloe Concentrado</h3>
+        <p class="card-desc">Disfrutalo con agua o mezclalo con tu bebida favorita. Sábila, Sin calorías, Sin azúcares añadidos.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>20</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.15s">
+        <span class="card-badge">Vitaminas</span>
+        <h3 class="card-name">Batidos Herbalife</h3>
+        <p class="card-desc">Contiene 9g de proteina de soya, aporta menos de 100 calorías, Aporta 23 vitaminas y minerales.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.2s">
+        <span class="card-badge">proteina</span>
+        <h3 class="card-name">Personalized Protein Powder</h3>
+        <p class="card-desc">Aporta 5g más de proteina a tu batido y solo 22 calorías, proteina proveniente de la soya y suero de leche.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>25</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BATIDOS -->
+  <div id="cat-batidos" class="cat-panel">
+    <div class="section-header">
+      <p class="section-eyebrow">Nutrición completa</p>
+      <h2 class="section-title">Batidos <em>nutritivos</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Choco-avellana</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.1s">
+       <!-- <span class="card-badge">Combo</span> -->
+        <h3 class="card-name">Chocolate</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.15s">
+        <h3 class="card-name">Nuez</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.2s">
+        <h3 class="card-name">Vainilla</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Arroz con Leche</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Coco</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Cookies & Cream</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Fresa</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Frutas Tropicales</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Frutos Rojos</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Natural</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Piña Colada</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Plátano</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.05s">
+        <h3 class="card-name">Sabor Dulce de Leche</h3>
+        <p class="card-desc">Herbalife Numero 1, Polvo para preparar batido 550 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Snacks -->
+  <div id="cat-suplementos" class="cat-panel">
+    <div class="section-header">
+      <p class="section-eyebrow">Potencia tu salud</p>
+      <h2 class="section-title">Snacks <em>Herbalife</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="product-grid">
+      <div class="product-card" style="animation-delay:0.05s">
+        <span class="card-badge">Chocolate</span>
+        <h3 class="card-name">Barra con Proteína</h3>
+        <p class="card-desc">40 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>40</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.1s">
+        <span class="card-badge">Barbecue</span>
+        <h3 class="card-name">Protein Chips</h3>
+        <p class="card-desc">37 g.</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>50</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.15s">
+        <span class="card-badge">Limón</span>
+        <h3 class="card-name">Barra con proteina deluxe sabor limón</h3>
+        <p class="card-desc">35 g</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>40</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+      <div class="product-card" style="animation-delay:0.2s">
+        <span class="card-badge">Vainilla con Almendra</span>
+        <h3 class="card-name">Barra con proteina deluxe sabor vainilla con almendras</h3>
+        <p class="card-desc">35 g</p>
+        <div class="card-footer">
+          <span class="card-price"><sup>$</sup>40</span>
+          <div class="card-dot"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAQUETES -->
+  <div id="cat-paquetes" class="cat-panel">
+    <div class="section-header">
+      <p class="section-eyebrow">Mejor valor</p>
+      <h2 class="section-title">Paquetes <em>especiales</em></h2>
+      <div class="section-line"></div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 1.25rem;">
+      <div class="paquete-card featured" style="animation-delay:0.05s">
+        <span class="featured-label">Más popular</span>
+        <h3 class="paquete-name">Pack Basico</h3>
+        <ul class="paquete-includes">
+          <li>Té</li>
+          <li>Aloe</li>
+          <li>Malteada</li>
+        </ul>
+        <span class="paquete-price">$85</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-brand">Club Aliss</p>
+  <p class="footer-tagline">Bebidas · Nutrición · Bienestar · Herbalife</p>
+  <p class="footer-note">Precios en pesos mexicanos (MXN) · Sujetos a cambios sin previo aviso<br>Para pedidos y asesoría personalizada, contáctanos directamente</p>
+</footer>
+
+<script>
+function showCat(id, btn) {
+  document.querySelectorAll('.cat-panel').forEach(p => p.classList.remove('visible'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('cat-' + id).classList.add('visible');
+  btn.classList.add('active');
+  // re-trigger animations
+  document.querySelectorAll('#cat-' + id + ' .product-card, #cat-' + id + ' .paquete-card').forEach(c => {
+    c.style.animation = 'none';
+    c.offsetHeight;
+    c.style.animation = '';
+  });
+}
+</script>
+</body>
+</html>
